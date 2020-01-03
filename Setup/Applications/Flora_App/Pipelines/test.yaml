@@ -1,0 +1,61 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+pipelineStages:
+- type: ENV_STATE
+  name: QA
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+  workflowName: ArtifactCheck
+- type: APPROVAL
+  name: Approval 1
+  parallel: false
+  properties:
+    workflowVariables: null
+    userGroups:
+    - tSS6OKRcRr2JMVRcuzTDOw
+    variables:
+    - name: version
+      value: ${context.info.version}
+    pipelineStageElementId: ofBK3aZdS7yM6axq580CpQ
+    stageName: approve2
+    disable: false
+    timeoutMillis: 604800000
+    disableAssertion: null
+    pipelineStageParallelIndex: 2
+    approvalStateType: USER_GROUP
+    sweepingOutputName: info1
+    pipelineId: jdUXfYclT1iTLI7GJtWufg
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: approve2
+- type: APPROVAL
+  name: Approval 2
+  parallel: true
+  properties:
+    workflowVariables: null
+    userGroups:
+    - tSS6OKRcRr2JMVRcuzTDOw
+    variables:
+    - name: version
+      value: ${info.version}
+    pipelineStageElementId: XkWLIeRJTF2xXvMkGC2baQ
+    stageName: approve2
+    disable: false
+    timeoutMillis: 604800000
+    disableAssertion: null
+    pipelineStageParallelIndex: 2
+    approvalStateType: USER_GROUP
+    sweepingOutputName: info2
+    pipelineId: jdUXfYclT1iTLI7GJtWufg
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: approve2
+- type: ENV_STATE
+  name: ken_post_approval_print
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 3
+  workflowName: ken_post_approval_print

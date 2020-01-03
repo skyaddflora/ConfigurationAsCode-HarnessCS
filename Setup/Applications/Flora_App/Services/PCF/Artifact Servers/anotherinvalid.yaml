@@ -1,0 +1,7 @@
+harnessApiVersion: '1.0'
+type: ARTIFACTORY
+artifactPattern: bad*.jar
+metadataOnly: true
+repositoryName: kentest1
+repositoryType: any
+serverName: Harness Artifactory
