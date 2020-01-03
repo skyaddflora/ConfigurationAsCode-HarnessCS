@@ -1,9 +1,9 @@
 harnessApiVersion: '1.0'
 type: NEXUS
 artifactPaths:
-- todolist-copy
+- todolist-copy-new
 extension: war
-groupId: releases
+groupId: releases-new
 metadataOnly: false
 repositoryFormat: maven
 repositoryName: releases
