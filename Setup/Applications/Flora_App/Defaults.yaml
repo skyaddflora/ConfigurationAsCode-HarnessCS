@@ -1,7 +1,7 @@
 harnessApiVersion: '1.0'
 type: APPLICATION_DEFAULTS
 defaults:
-- name: APP_ORG
+- name: APP_ORG_New_New
   value: Flora_App_new
 - name: BACKUP_PATH
   value: $HOME/${app.name}/${service.name}/${env.name}/backup/${timestampId}
