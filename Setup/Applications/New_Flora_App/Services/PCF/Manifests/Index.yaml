@@ -1,8 +1,3 @@
 harnessApiVersion: '1.0'
 type: APPLICATION_MANIFEST
-gitFileConfig:
-  branch: master
-  connectorName: flora-repo-pcf
-  filePath: pcf/service
-  useBranch: true
-storeType: Remote
+storeType: Local
