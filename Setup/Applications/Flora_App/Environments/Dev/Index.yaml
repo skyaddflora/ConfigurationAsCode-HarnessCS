@@ -4,3 +4,7 @@ configMapYamlByServiceTemplateName: {}
 environmentType: NON_PROD
 tags:
   env: prod
+variableOverrides:
+- name: value
+  value: '1'
+  valueType: TEXT
