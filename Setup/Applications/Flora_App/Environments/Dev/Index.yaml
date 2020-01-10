@@ -5,6 +5,9 @@ environmentType: NON_PROD
 tags:
   env: prod
 variableOverrides:
+- name: domain
+  value: dev.harness.io
+  valueType: TEXT
 - name: value
   value: '1'
   valueType: TEXT
