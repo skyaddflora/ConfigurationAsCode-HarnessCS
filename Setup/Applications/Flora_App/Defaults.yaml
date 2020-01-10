@@ -3,6 +3,7 @@ type: APPLICATION_DEFAULTS
 defaults:
 - name: APP_ORG_New_New
   value: Flora_App_new
+#changing it back to test two way sync
 - name: BACKUP_PATH
   value: $HOME/${app.name}/${service.name}/${env.name}/backup/${timestampId}
 - name: RUNTIME_PATH
