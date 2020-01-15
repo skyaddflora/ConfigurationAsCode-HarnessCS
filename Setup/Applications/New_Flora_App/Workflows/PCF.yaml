@@ -80,6 +80,9 @@ phases:
     - name: relatedField
     - name: entityType
       value: INFRASTRUCTURE_DEFINITION
+preDeploymentSteps:
+- type: ARTIFACT_CHECK
+  name: Artifact Check
 rollbackPhases:
 - type: PCF
   computeProviderName: pcf
