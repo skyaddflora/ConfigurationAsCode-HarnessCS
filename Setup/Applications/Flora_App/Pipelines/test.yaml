@@ -12,20 +12,19 @@ pipelineStages:
   name: Approval 1
   parallel: false
   properties:
-    workflowVariables: null
     userGroups:
     - tSS6OKRcRr2JMVRcuzTDOw
     variables:
-    - name: version
-      value: ${context.info.version}
-    pipelineStageElementId: ofBK3aZdS7yM6axq580CpQ
+    - name: test1
+      value: test1
+    pipelineStageElementId: bhA7PLOoQXarUNhpmV7nCQ
     stageName: approve2
     disable: false
     timeoutMillis: 604800000
     disableAssertion: null
     pipelineStageParallelIndex: 2
     approvalStateType: USER_GROUP
-    sweepingOutputName: info1
+    sweepingOutputName: info
     pipelineId: jdUXfYclT1iTLI7GJtWufg
   skipCondition:
     type: DO_NOT_SKIP
