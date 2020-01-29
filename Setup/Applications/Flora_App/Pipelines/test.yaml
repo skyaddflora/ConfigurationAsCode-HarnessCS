@@ -17,7 +17,7 @@ pipelineStages:
     variables:
     - name: testing
       value: IK
-    pipelineStageElementId: 8qMI7v7RQYCtsyCkv_TMTg
+    pipelineStageElementId: he6fD86WQTW4I8wldROvHQ
     stageName: approve2
     disable: false
     timeoutMillis: 604800000
@@ -25,27 +25,6 @@ pipelineStages:
     pipelineStageParallelIndex: 2
     approvalStateType: USER_GROUP
     sweepingOutputName: testing_ik
-    pipelineId: jdUXfYclT1iTLI7GJtWufg
-  skipCondition:
-    type: DO_NOT_SKIP
-  stageName: approve2
-- type: APPROVAL
-  name: Approval 2
-  parallel: true
-  properties:
-    userGroups:
-    - tSS6OKRcRr2JMVRcuzTDOw
-    variables:
-    - name: ilan
-      value: ''
-    pipelineStageElementId: vNlQ0q_8RVmXvvTNwSoRkA
-    stageName: approve2
-    disable: false
-    timeoutMillis: 604800000
-    disableAssertion: null
-    pipelineStageParallelIndex: 2
-    approvalStateType: USER_GROUP
-    sweepingOutputName: ilan
     pipelineId: jdUXfYclT1iTLI7GJtWufg
   skipCondition:
     type: DO_NOT_SKIP
