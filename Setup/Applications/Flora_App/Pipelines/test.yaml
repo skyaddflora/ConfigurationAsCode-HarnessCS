@@ -17,7 +17,7 @@ pipelineStages:
     variables:
     - name: testing
       value: IK
-    pipelineStageElementId: AjTSFuXuTkyQnEWaOGXXBA
+    pipelineStageElementId: 8qMI7v7RQYCtsyCkv_TMTg
     stageName: approve2
     disable: false
     timeoutMillis: 604800000
@@ -33,20 +33,19 @@ pipelineStages:
   name: Approval 2
   parallel: true
   properties:
-    workflowVariables: null
     userGroups:
     - tSS6OKRcRr2JMVRcuzTDOw
     variables:
-    - name: version
-      value: ${info.version}
-    pipelineStageElementId: XkWLIeRJTF2xXvMkGC2baQ
+    - name: ilan
+      value: ''
+    pipelineStageElementId: vNlQ0q_8RVmXvvTNwSoRkA
     stageName: approve2
     disable: false
     timeoutMillis: 604800000
     disableAssertion: null
     pipelineStageParallelIndex: 2
     approvalStateType: USER_GROUP
-    sweepingOutputName: info2
+    sweepingOutputName: ilan
     pipelineId: jdUXfYclT1iTLI7GJtWufg
   skipCondition:
     type: DO_NOT_SKIP
