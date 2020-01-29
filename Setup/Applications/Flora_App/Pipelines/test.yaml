@@ -15,16 +15,16 @@ pipelineStages:
     userGroups:
     - tSS6OKRcRr2JMVRcuzTDOw
     variables:
-    - name: test1
-      value: test1
-    pipelineStageElementId: bhA7PLOoQXarUNhpmV7nCQ
+    - name: testing
+      value: IK
+    pipelineStageElementId: AjTSFuXuTkyQnEWaOGXXBA
     stageName: approve2
     disable: false
     timeoutMillis: 604800000
     disableAssertion: null
     pipelineStageParallelIndex: 2
     approvalStateType: USER_GROUP
-    sweepingOutputName: info
+    sweepingOutputName: testing_ik
     pipelineId: jdUXfYclT1iTLI7GJtWufg
   skipCondition:
     type: DO_NOT_SKIP
