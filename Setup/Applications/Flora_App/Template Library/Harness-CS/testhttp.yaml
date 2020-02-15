@@ -1,0 +1,9 @@
+harnessApiVersion: '1.0'
+type: HTTP
+assertion: (${httpResponseCode}==200) && ${testvar}==122
+method: GET
+timeoutMillis: 0
+url: http://www.google.com
+variables:
+- name: testvar
+  value: '123'
