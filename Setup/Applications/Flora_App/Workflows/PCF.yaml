@@ -44,17 +44,6 @@ phases:
         useAppAutoscalar: false
         useCurrentRunningCount: false
     - type: HTTP
-      name: Health Check
-      properties:
-        executeWithPreviousSteps: false
-        socketTimeoutMillis: 0
-      templateUri: Harness-CS/HTTP Verifications/Health Check:latest
-      templateVariables:
-      - name: Url
-        value: ${serviceVariable.kb-url}
-      - name: ResponseCode
-        value: '200'
-    - type: HTTP
       name: HTTP_2
       properties:
         assertion: ${httpResponseCode}==${ResponseCode}
