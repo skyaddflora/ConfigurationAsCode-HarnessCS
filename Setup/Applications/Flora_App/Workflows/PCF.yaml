@@ -43,6 +43,17 @@ phases:
         timeoutIntervalInMinutes: 5
         useAppAutoscalar: false
         useCurrentRunningCount: false
+    - type: HTTP
+      name: Health Check
+      properties:
+        executeWithPreviousSteps: false
+        socketTimeoutMillis: 0
+      templateUri: Harness-CS/HTTP Verifications/Health Check:latest
+      templateVariables:
+      - name: Url
+        value: ${serviceVariable.kb-url}
+      - name: ResponseCode
+        value: '200'
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
@@ -164,6 +175,7 @@ userVariables:
   mandatory: true
   name: Service
 - type: ENTITY
+  description: Variable for Infrastructure Definition entity
   fixed: false
   mandatory: true
   name: InfraDefinition_PCF
