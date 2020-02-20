@@ -54,6 +54,23 @@ phases:
         value: ${serviceVariable.kb-url}
       - name: ResponseCode
         value: '200'
+    - type: HTTP
+      name: HTTP_2
+      properties:
+        assertion: ${httpResponseCode}==${ResponseCode}
+        body: this is a test
+        executeWithPreviousSteps: false
+        header: |
+          content-type: application/json
+        method: GET
+        publishAsVar: false
+        responseProcessingExpressions: ''
+        socketTimeoutMillis: 0
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateVariables: ''
+        timeoutMillis: 10000
+        url: ${Url}
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
