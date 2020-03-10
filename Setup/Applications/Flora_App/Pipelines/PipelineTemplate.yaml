@@ -1,2 +1,20 @@
 harnessApiVersion: '1.0'
 type: PIPELINE
+pipelineStages:
+- type: ENV_STATE
+  name: PCF (Workflow Template)
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: PCF
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_PCF
+    value: ${infradef_QA}
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: QA
+  - entityType: SERVICE
+    name: Service
+    value: ${srv1}
