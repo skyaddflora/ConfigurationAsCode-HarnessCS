@@ -18,3 +18,20 @@ pipelineStages:
   - entityType: SERVICE
     name: Service
     value: ${srv1}
+- type: ENV_STATE
+  name: Dev
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+  workflowName: PCF
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_PCF
+    value: ${InfraDef_Dev}
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: Dev
+  - entityType: SERVICE
+    name: Service
+    value: ${srv1}
