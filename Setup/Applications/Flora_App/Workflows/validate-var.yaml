@@ -36,7 +36,7 @@ phases:
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${Publish(context.get(${env.name})).myValue}
+        scriptString: echo ${Publish_context.get(${env.name}).myValue}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
