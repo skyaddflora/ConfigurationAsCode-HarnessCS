@@ -18,3 +18,20 @@ pipelineStages:
   - entityType: SERVICE
     name: Service
     value: PCF
+- type: ENV_STATE
+  name: Validate
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+  workflowName: validate-var-template-clone
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_PCF
+    value: PCF
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: qa-test
+  - entityType: SERVICE
+    name: Service
+    value: PCF
