@@ -27,6 +27,25 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
+      name: sanitize
+      properties:
+        commandPath: null
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: VAR1
+        publishAsVar: true
+        scriptString: |-
+          VAR1=${env.name}
+          export VAR1=${VAR1//-/_}
+        scriptType: BASH
+        sshKeyRef: null
+        sweepingOutputName: myEnv
+        sweepingOutputScope: WORKFLOW
+        tags: ''
+        templateVariables: ''
+        timeoutMillis: 60000
+    - type: SHELL_SCRIPT
       name: validation
       properties:
         commandPath: null
@@ -45,25 +64,6 @@ phases:
         templateUuid: null
         templateVariables: null
         templateVersion: null
-        timeoutMillis: 60000
-    - type: SHELL_SCRIPT
-      name: sanitize
-      properties:
-        commandPath: null
-        connectionAttributes: null
-        executeOnDelegate: true
-        host: null
-        outputVars: VAR1
-        publishAsVar: true
-        scriptString: |-
-          VAR1=${env.name}
-          export VAR1=${VAR1//-/_}
-        scriptType: BASH
-        sshKeyRef: null
-        sweepingOutputName: myEnv
-        sweepingOutputScope: WORKFLOW
-        tags: ''
-        templateVariables: ''
         timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
