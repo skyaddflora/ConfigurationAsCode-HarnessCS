@@ -25,13 +25,6 @@ phases:
   phaseSteps:
   - type: PCF_SETUP
     name: Setup
-    steps:
-    - type: PCF_SETUP
-      name: App Setup
-      properties:
-        blueGreen: false
-        isWorkflowV2: true
-        resizeStrategy: DOWNSIZE_OLD_FIRST
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
