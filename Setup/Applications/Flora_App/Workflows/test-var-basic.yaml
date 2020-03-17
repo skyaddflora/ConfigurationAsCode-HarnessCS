@@ -31,7 +31,6 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
-        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: myValue
