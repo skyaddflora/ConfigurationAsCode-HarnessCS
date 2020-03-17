@@ -31,13 +31,15 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
+        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: myValue
         publishAsVar: true
         scriptString: |+
           echo ${env.name}
-          export ${context.get(${env.name}).myValue}
+          myValue = enable
+          export $myValue
 
         scriptType: BASH
         sshKeyRef: null
