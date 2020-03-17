@@ -27,7 +27,7 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
-      name: Shell Script clone
+      name: publish to workflow
       properties:
         commandPath: null
         connectionAttributes: null
