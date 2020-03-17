@@ -43,7 +43,7 @@ phases:
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: ${env.name}
+        sweepingOutputName: Publish${env.name}
         sweepingOutputScope: PIPELINE
         tags: ''
         templateUuid: null
