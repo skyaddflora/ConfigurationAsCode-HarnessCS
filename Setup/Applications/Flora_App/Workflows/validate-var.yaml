@@ -46,6 +46,11 @@ phases:
         templateVariables: null
         templateVersion: null
         timeoutMillis: 60000
+    - type: BARRIER
+      name: Barrier
+      properties:
+        identifier: setvar
+        timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
