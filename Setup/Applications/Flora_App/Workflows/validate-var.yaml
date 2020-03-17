@@ -25,6 +25,24 @@ phases:
   phaseSteps:
   - type: PCF_SETUP
     name: Setup
+    steps:
+    - type: SHELL_SCRIPT
+      name: Shell Script
+      properties:
+        commandPath: null
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        scriptString: echo $publishVar${serviceVariable.Env}.VAR
+        scriptType: BASH
+        sshKeyRef: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        tags: ''
+        templateVariables: ''
+        timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
