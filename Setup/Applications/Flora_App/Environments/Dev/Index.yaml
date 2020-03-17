@@ -5,6 +5,10 @@ environmentType: NON_PROD
 tags:
   env: prod
 variableOverrides:
+- name: Env
+  serviceName: PCF
+  value: Dev
+  valueType: TEXT
 - name: domain
   value: dev.harness.io
   valueType: TEXT
