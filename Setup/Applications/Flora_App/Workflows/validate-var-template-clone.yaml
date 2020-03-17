@@ -27,15 +27,16 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
-      name: Shell Script
+      name: validation
       properties:
         commandPath: null
         connectionAttributes: null
+        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${context.get(${env.name}).myValue}
+        scriptString: echo publishedVar${myEnv.VAR1}.test_var
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
