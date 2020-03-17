@@ -1,7 +1,7 @@
 harnessApiVersion: '1.0'
 type: BASIC
 concurrencyStrategy: INFRA
-envName: Dev
+envName: Dev-test
 failureStrategies:
 - executionScope: WORKFLOW
   failureTypes:

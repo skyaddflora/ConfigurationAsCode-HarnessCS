@@ -31,7 +31,7 @@ pipelineStages:
     value: ${InfraDef_Dev}
   - entityType: ENVIRONMENT
     name: Environment
-    value: Dev
+    value: Dev-test
   - entityType: SERVICE
     name: Service
     value: ${srv1}

@@ -48,7 +48,7 @@ pipelineStages:
     value: PCF
   - entityType: ENVIRONMENT
     name: Environment
-    value: Dev
+    value: Dev-test
   - entityType: SERVICE
     name: Service
     value: PCF
