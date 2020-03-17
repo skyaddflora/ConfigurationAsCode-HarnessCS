@@ -28,9 +28,6 @@ phases:
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
-    steps:
-    - type: PCF_RESIZE
-      name: App Resize
     stepsInParallel: false
   - type: VERIFY_SERVICE
     name: Verify Service
