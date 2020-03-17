@@ -38,7 +38,7 @@ phases:
         publishAsVar: true
         scriptString: |+
           echo ${env.name}
-          myValue = enable
+          myValue="enable"
           export $myValue
 
         scriptType: BASH
