@@ -34,14 +34,14 @@ phases:
         connectionType: SSH
         executeOnDelegate: true
         host: null
-        outputVars: VAR_${serviceVariable.Env}
+        outputVars: VAR
         publishAsVar: true
         scriptString: |+
-          echo "VAR_${serviceVariable.Env}"
+          export VAR=${serviceVariable.Env}
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: test
+        sweepingOutputName: PublishVar${serviceVariable.Env}
         sweepingOutputScope: PIPELINE
         tags: ''
         templateUuid: null
