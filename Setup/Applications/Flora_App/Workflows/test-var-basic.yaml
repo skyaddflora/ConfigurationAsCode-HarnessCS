@@ -31,6 +31,7 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
+        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: VAR
@@ -41,9 +42,11 @@ phases:
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: test
-        sweepingOutputScope: WORKFLOW
+        sweepingOutputScope: PIPELINE
         tags: ''
-        templateVariables: ''
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
