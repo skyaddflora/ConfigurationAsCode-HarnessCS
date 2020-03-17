@@ -31,6 +31,7 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
+        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: myValue
@@ -42,7 +43,7 @@ phases:
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: ${env.name}_script1
+        sweepingOutputName: ${env.name}1
         sweepingOutputScope: PIPELINE
         tags: ''
         templateUuid: null
