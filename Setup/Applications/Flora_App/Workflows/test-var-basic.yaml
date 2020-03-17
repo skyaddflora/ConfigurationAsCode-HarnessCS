@@ -34,10 +34,10 @@ phases:
         connectionType: SSH
         executeOnDelegate: true
         host: null
-        outputVars: VAR
+        outputVars: VAR_${serviceVariable.Env}
         publishAsVar: true
         scriptString: |+
-          echo VAR=${serviceVariable.Env}_var
+          echo "VAR_${serviceVariable.Env}"
 
         scriptType: BASH
         sshKeyRef: null
