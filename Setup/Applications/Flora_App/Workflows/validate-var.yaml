@@ -27,7 +27,7 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
-      name: Shell Script
+      name: script1
       properties:
         commandPath: null
         connectionAttributes: null
@@ -36,7 +36,7 @@ phases:
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${context.get("Publish_${env.name}").myValue}
+        scriptString: echo ${context.get("script1_${env.name}").myValue}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
