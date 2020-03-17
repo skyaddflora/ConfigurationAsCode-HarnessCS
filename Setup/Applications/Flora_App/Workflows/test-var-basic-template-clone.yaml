@@ -27,24 +27,23 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
-      name: Shell Script
+      name: Shell Script clone
       properties:
         commandPath: null
         connectionAttributes: null
         connectionType: SSH
         executeOnDelegate: true
         host: null
-        outputVars: myValue
+        outputVars: VAR1
         publishAsVar: true
         scriptString: |+
-          echo ${env.name}
-          myValue="enable"
-          export $myValue
+          VAR1=${env.name}
+          export VAR1=${VAR1//-/_}
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: ${env.name}
-        sweepingOutputScope: PIPELINE
+        sweepingOutputName: myEnv
+        sweepingOutputScope: WORKFLOW
         tags: ''
         templateUuid: null
         templateVariables: null
