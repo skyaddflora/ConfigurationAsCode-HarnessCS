@@ -38,7 +38,7 @@ phases:
         publishAsVar: true
         scriptString: |+
           echo ${env.name}
-          export ${context.get(${env.name}.myValue)}
+          export ${context.get(${env.name}).myValue}
 
         scriptType: BASH
         sshKeyRef: null
