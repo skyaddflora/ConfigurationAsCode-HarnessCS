@@ -26,6 +26,11 @@ phases:
   - type: PCF_SETUP
     name: Setup
     steps:
+    - type: BARRIER
+      name: Barrier
+      properties:
+        identifier: setvar
+        timeoutMillis: 60000
     - type: SHELL_SCRIPT
       name: Shell Script
       properties:
@@ -45,11 +50,6 @@ phases:
         templateUuid: null
         templateVariables: null
         templateVersion: null
-        timeoutMillis: 60000
-    - type: BARRIER
-      name: Barrier
-      properties:
-        identifier: setvar
         timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
