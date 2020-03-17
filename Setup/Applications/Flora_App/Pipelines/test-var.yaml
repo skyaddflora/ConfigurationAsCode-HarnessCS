@@ -6,7 +6,7 @@ pipelineStages:
   parallel: false
   skipCondition:
     type: DO_NOT_SKIP
-  stageName: STAGE 1
+  stageName: STAGE 3
   workflowName: test-var-basic
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
@@ -20,7 +20,7 @@ pipelineStages:
     value: PCF
 - type: ENV_STATE
   name: Validate
-  parallel: false
+  parallel: true
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 3
