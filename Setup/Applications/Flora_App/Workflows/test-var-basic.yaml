@@ -41,7 +41,7 @@ phases:
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: PublishVar${env.name}
+        sweepingOutputName: PublishVar${serviceVariable.Env}
         sweepingOutputScope: PIPELINE
         tags: ''
         templateUuid: null
