@@ -14,7 +14,7 @@ pipelineStages:
     value: ${infradef_QA}
   - entityType: ENVIRONMENT
     name: Environment
-    value: QA
+    value: qa-test
   - entityType: SERVICE
     name: Service
     value: ${srv1}

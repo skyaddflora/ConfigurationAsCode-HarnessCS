@@ -14,7 +14,7 @@ pipelineStages:
     value: PCF
   - entityType: ENVIRONMENT
     name: Environment
-    value: QA
+    value: qa-test
   - entityType: SERVICE
     name: Service
     value: PCF
@@ -31,7 +31,7 @@ pipelineStages:
     value: PCF
   - entityType: ENVIRONMENT
     name: Environment
-    value: QA
+    value: qa-test
   - entityType: SERVICE
     name: Service
     value: PCF
