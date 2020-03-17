@@ -31,11 +31,12 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
+        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${context.get(${env.name}).myValue}
+        scriptString: echo ${context.get(${env.name}_script1).myValue}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
