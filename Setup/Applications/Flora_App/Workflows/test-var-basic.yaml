@@ -27,7 +27,7 @@ phases:
     name: Setup
     steps:
     - type: SHELL_SCRIPT
-      name: Shell Script
+      name: script1
       properties:
         commandPath: null
         connectionAttributes: null
@@ -40,11 +40,10 @@ phases:
           echo ${env.name}
           myValue="enable"
           export $myValue
-          echo ${context.get(${env.name})}
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: ${env.name}
+        sweepingOutputName: ${env.name}_script1
         sweepingOutputScope: PIPELINE
         tags: ''
         templateUuid: null
