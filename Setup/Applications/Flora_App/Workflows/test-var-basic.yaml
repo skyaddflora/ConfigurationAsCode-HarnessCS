@@ -40,7 +40,7 @@ phases:
           echo ${env.name}
           myValue="enable"
           export $myValue
-          echo context.get(${env.name})
+          echo ${context.get(${env.name})}
 
         scriptType: BASH
         sshKeyRef: null
