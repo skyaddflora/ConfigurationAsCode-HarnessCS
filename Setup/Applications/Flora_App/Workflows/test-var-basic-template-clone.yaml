@@ -48,6 +48,23 @@ phases:
         templateVariables: null
         templateVersion: null
         timeoutMillis: 60000
+    - type: SHELL_SCRIPT
+      name: publish to pipeline
+      properties:
+        commandPath: null
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: test_var
+        publishAsVar: true
+        scriptString: export test_var=${myEnv.VAR1}
+        scriptType: BASH
+        sshKeyRef: null
+        sweepingOutputName: publishedVar${myEnv.VAR1}
+        sweepingOutputScope: PIPELINE
+        tags: ''
+        templateVariables: ''
+        timeoutMillis: 60000
     stepsInParallel: false
   - type: PCF_RESIZE
     name: Deploy
