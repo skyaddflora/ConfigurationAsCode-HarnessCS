@@ -19,23 +19,6 @@ pipelineStages:
     name: Service
     value: PCF
 - type: ENV_STATE
-  name: Validate
-  parallel: false
-  skipCondition:
-    type: DO_NOT_SKIP
-  stageName: STAGE 3
-  workflowName: validate-var
-  workflowVariables:
-  - entityType: INFRASTRUCTURE_DEFINITION
-    name: InfraDefinition_PCF
-    value: PCF
-  - entityType: ENVIRONMENT
-    name: Environment
-    value: QA
-  - entityType: SERVICE
-    name: Service
-    value: PCF
-- type: ENV_STATE
   name: DevStep
   parallel: false
   skipCondition:
@@ -49,6 +32,23 @@ pipelineStages:
   - entityType: ENVIRONMENT
     name: Environment
     value: Dev
+  - entityType: SERVICE
+    name: Service
+    value: PCF
+- type: ENV_STATE
+  name: Validate
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 3
+  workflowName: validate-var
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_PCF
+    value: PCF
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: QA
   - entityType: SERVICE
     name: Service
     value: PCF
