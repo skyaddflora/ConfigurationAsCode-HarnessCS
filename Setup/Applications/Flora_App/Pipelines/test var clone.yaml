@@ -35,3 +35,22 @@ pipelineStages:
   - entityType: SERVICE
     name: Service
     value: PCF
+- type: APPROVAL
+  name: Approval 2
+  parallel: false
+  properties:
+    userGroups:
+    - TZQdHK5ASfapmQT58yLNsA
+    variables: null
+    pipelineStageElementId: yuw_4m4vSKyXe_jktZN65w
+    stageName: STAGE 3
+    disable: false
+    timeoutMillis: 2073600000
+    disableAssertion: null
+    pipelineStageParallelIndex: 3
+    approvalStateType: USER_GROUP
+    sweepingOutputName: ''
+    pipelineId: 5pumWQcSReuUebQSDh3ZZQ
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 3
