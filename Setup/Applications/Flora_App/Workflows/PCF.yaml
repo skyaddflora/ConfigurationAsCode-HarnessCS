@@ -20,7 +20,7 @@ phases:
 - type: PCF
   computeProviderName: pcf
   daemonSet: false
-  infraDefinitionName: PCF-qa
+  infraDefinitionName: PCF-qa-qa-qa-qa
   name: Phase 1
   phaseSteps:
   - type: PCF_SETUP
@@ -84,7 +84,7 @@ rollbackPhases:
 - type: PCF
   computeProviderName: pcf
   daemonSet: false
-  infraDefinitionName: PCF-qa
+  infraDefinitionName: PCF-qa-qa-qa-qa
   name: Rollback Phase 1
   phaseNameForRollback: Phase 1
   phaseSteps:
