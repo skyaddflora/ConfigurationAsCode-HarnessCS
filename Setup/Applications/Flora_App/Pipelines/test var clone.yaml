@@ -11,7 +11,7 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: PCF
+    value: PCF-qa
   - entityType: ENVIRONMENT
     name: Environment
     value: qa-test
@@ -28,7 +28,7 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: PCF
+    value: PCF-qa
   - entityType: ENVIRONMENT
     name: Environment
     value: qa-test
@@ -40,7 +40,7 @@ pipelineStages:
   parallel: false
   properties:
     userGroups:
-    - TZQdHK5ASfapmQT58yLNsA
+    - alex send email
     variables: null
     pipelineStageElementId: qPeiSFpCRhegspqtJqlzJw
     stageName: STAGE 3
@@ -59,7 +59,7 @@ pipelineStages:
   parallel: false
   properties:
     userGroups:
-    - TZQdHK5ASfapmQT58yLNsA
+    - alex send email
     variables: null
     pipelineStageElementId: eXr0ISYNT2SpO35e2yCZBw
     stageName: STAGE 4

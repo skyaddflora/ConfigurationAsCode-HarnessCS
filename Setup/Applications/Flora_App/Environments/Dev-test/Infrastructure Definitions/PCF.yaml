@@ -1,0 +1,13 @@
+harnessApiVersion: '1.0'
+type: INFRA_DEFINITION
+cloudProviderType: PCF
+deploymentType: PCF
+infrastructure:
+- type: PCF_PCF
+  cloudProviderName: Florapcf
+  organization: Harness-BB
+  routeMaps:
+  - link2.cfapps.io
+  space: CS-Training
+  tempRouteMap:
+  - templink2.cfapps.io

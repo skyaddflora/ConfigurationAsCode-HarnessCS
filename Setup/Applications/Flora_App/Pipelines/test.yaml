@@ -13,7 +13,7 @@ pipelineStages:
   parallel: false
   properties:
     userGroups:
-    - tSS6OKRcRr2JMVRcuzTDOw
+    - Account Administrator
     variables:
     - name: ilan
       value: ''
