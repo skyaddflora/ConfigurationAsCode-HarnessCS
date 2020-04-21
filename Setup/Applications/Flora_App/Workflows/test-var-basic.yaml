@@ -38,8 +38,8 @@ phases:
         scriptString: |+
           echo ${env.name}
           echo ${infra.name}
-          myValue="qa"
-          export $myValue
+          #myValue="qa"
+          export $myValue = ${env.name}
 
         scriptType: BASH
         sshKeyRef: null
