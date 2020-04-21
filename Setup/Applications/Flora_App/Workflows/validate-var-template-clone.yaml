@@ -20,7 +20,7 @@ phases:
 - type: PCF
   computeProviderName: Florapcf
   daemonSet: false
-  infraDefinitionName: PCF
+  infraDefinitionName: PCF-dev
   name: Phase 1
   phaseSteps:
   - type: PCF_SETUP
@@ -101,7 +101,7 @@ rollbackPhases:
 - type: PCF
   computeProviderName: Florapcf
   daemonSet: false
-  infraDefinitionName: PCF
+  infraDefinitionName: PCF-dev
   name: Rollback Phase 1
   phaseNameForRollback: Phase 1
   phaseSteps:
