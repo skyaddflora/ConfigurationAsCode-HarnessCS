@@ -31,21 +31,22 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
-        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: myValue
         publishAsVar: true
         scriptString: |+
           echo ${env.name}
+          echo ${infra.name}
           myValue="enable"
           export $myValue
 
         scriptType: BASH
         sshKeyRef: null
-        sweepingOutputName: script1_${env.name}
+        sweepingOutputName: script1_${env.name}_${infra.name}
         sweepingOutputScope: PIPELINE
         tags: ''
+        templateExpressions: null
         templateUuid: null
         templateVariables: null
         templateVersion: null
