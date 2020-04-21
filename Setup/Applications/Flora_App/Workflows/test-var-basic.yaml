@@ -33,7 +33,7 @@ phases:
         connectionAttributes: null
         executeOnDelegate: true
         host: null
-        outputVars: myValue
+        outputVars: myValue, myValue1
         publishAsVar: true
         scriptString: |
           echo ${env.name}
