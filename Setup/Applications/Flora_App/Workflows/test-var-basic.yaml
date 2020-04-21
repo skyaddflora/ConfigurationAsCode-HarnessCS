@@ -39,7 +39,7 @@ phases:
           echo ${env.name}
           echo ${infra.name}
           #myValue="qa"
-          export $myValue="${env.name}"
+          export myValue=${env.name}
 
         scriptType: BASH
         sshKeyRef: null
