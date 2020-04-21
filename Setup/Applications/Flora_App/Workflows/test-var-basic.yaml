@@ -35,12 +35,12 @@ phases:
         host: null
         outputVars: myValue
         publishAsVar: true
-        scriptString: |+
+        scriptString: |
           echo ${env.name}
           echo ${infra.name}
           #myValue="qa"
           export myValue=${env.name}
-
+          export myValue1=${infra.name}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: script1_${env.name}_${infra.name}
