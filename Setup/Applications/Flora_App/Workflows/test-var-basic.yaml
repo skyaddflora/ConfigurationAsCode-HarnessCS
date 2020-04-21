@@ -166,3 +166,8 @@ userVariables:
   fixed: false
   mandatory: true
   name: InfraDefinition_PCF
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: appName
+  value: ${context.get("script1_${env.name}_${infra.name}").myValue}
