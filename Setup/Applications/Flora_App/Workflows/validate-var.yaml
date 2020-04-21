@@ -31,17 +31,17 @@ phases:
       properties:
         commandPath: null
         connectionAttributes: null
-        connectionType: SSH
         executeOnDelegate: true
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${context.get("script1_${env.name}").myValue}
+        scriptString: echo ${context.get("script1_${env.name}_${infra.name}").myValue}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
         sweepingOutputScope: null
         tags: ''
+        templateExpressions: null
         templateUuid: null
         templateVariables: null
         templateVersion: null
