@@ -35,7 +35,9 @@ phases:
         host: null
         outputVars: ''
         publishAsVar: false
-        scriptString: echo ${context.get("script1_${env.name}_${infra.name}").myValue}
+        scriptString: |-
+          echo ${context.get("script1_${env.name}_${infra.name}").myValue}
+          echo ${workflow.variables.appName}
         scriptType: BASH
         sshKeyRef: null
         sweepingOutputName: null
