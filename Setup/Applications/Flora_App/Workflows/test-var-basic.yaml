@@ -38,7 +38,7 @@ phases:
         scriptString: |+
           echo ${env.name}
           echo ${infra.name}
-          myValue="enable"
+          myValue="qa"
           export $myValue
 
         scriptType: BASH
