@@ -14,7 +14,7 @@ pipelineStages:
   properties:
     workflowVariables: null
     userGroups:
-    - tSS6OKRcRr2JMVRcuzTDOw
+    - Account Administrator
     variables:
     - name: version
       value: ${context.info.version}
@@ -36,7 +36,7 @@ pipelineStages:
   properties:
     workflowVariables: null
     userGroups:
-    - tSS6OKRcRr2JMVRcuzTDOw
+    - Account Administrator
     variables:
     - name: version
       value: ${info.version}
