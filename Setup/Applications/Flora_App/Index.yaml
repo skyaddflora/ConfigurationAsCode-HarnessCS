@@ -1,4 +1,5 @@
 harnessApiVersion: '1.0'
 type: APPLICATION
 tags:
+  BU: BSP
   Team: IT
