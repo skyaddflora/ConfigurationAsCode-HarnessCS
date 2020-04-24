@@ -2,23 +2,6 @@ harnessApiVersion: '1.0'
 type: PIPELINE
 pipelineStages:
 - type: ENV_STATE
-  name: QA
-  parallel: false
-  skipCondition:
-    type: DO_NOT_SKIP
-  stageName: STAGE 1
-  workflowName: PCF
-  workflowVariables:
-  - entityType: INFRASTRUCTURE_DEFINITION
-    name: InfraDefinition_PCF
-    value: PCF-qa-qa-qa-qa
-  - entityType: ENVIRONMENT
-    name: Environment
-    value: qa-test
-  - entityType: SERVICE
-    name: Service
-    value: ${srv1}
-- type: ENV_STATE
   name: Dev
   parallel: false
   skipCondition:
@@ -32,6 +15,23 @@ pipelineStages:
   - entityType: ENVIRONMENT
     name: Environment
     value: Dev-test
+  - entityType: SERVICE
+    name: Service
+    value: ${srv1}
+- type: ENV_STATE
+  name: QA
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: PCF
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_PCF
+    value: PCF-qa-qa-qa-qa
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: qa-test
   - entityType: SERVICE
     name: Service
     value: ${srv1}
