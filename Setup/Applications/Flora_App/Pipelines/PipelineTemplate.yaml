@@ -28,7 +28,7 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: PCF-qa-qa-qa-qa
+    value: ${infraDef-QA}
   - entityType: ENVIRONMENT
     name: Environment
     value: qa-test
