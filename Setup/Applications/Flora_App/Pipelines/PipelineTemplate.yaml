@@ -28,7 +28,7 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: ${InfraDef_Dev}
+    value: PCF-dev
   - entityType: ENVIRONMENT
     name: Environment
     value: Dev-test
