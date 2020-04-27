@@ -28,10 +28,10 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: ${infraDef-QA}
+    value: PCF-qa-qa-qa-qa
   - entityType: ENVIRONMENT
     name: Environment
     value: qa-test
   - entityType: SERVICE
     name: Service
-    value: ${srv1}
+    value: ${service}
