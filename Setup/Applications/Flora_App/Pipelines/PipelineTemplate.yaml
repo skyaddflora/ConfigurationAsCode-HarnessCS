@@ -11,13 +11,13 @@ pipelineStages:
   workflowVariables:
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_PCF
-    value: ${infraDef-Dev}
+    value: PCF-dev
   - entityType: ENVIRONMENT
     name: Environment
     value: Dev-test
   - entityType: SERVICE
     name: Service
-    value: ${srv1}
+    value: ${service}
 - type: ENV_STATE
   name: QA
   parallel: false
