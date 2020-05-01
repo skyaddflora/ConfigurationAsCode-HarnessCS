@@ -14,3 +14,9 @@ templateVariables:
   value: $env:TEMP
 - name: AppPhysicalDirectory
   value: $env:SYSTEMDRIVE
+- name: SiteProtocol
+  value: http
+- name: SitePort
+  value: '80'
+- name: SiteHostName
+  value: '*'
